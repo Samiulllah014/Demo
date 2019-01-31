@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 300px;
+        height: 300px;
+        display: grid;
+        margin: auto;
+        border: 1px solid black;
+        grid-template-columns: 3;
+        grid-template-rows: 3;
+        grid-template: 
+        "area1 area2 area3"
+        "area"
+    }
+    .container div{
+        border: 1px solid blue;
+
+    }
+    </style>
 </head>
 <body>
-<script type="text/javascript">
-	var s,p,res;
-	s=prompt("Enter a value:");
-	p=prompt("Enter 2nd value:");
-	res=s+p;
-	document.write("Value without type casting:"+res);
-	document.write("<BR>");
-	res=parseInt(s)+parseInt(p);
-	document.write("Value with type casting:"res);
-
-</script>
+    <div class="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+    </div>
 </body>
 </html>
